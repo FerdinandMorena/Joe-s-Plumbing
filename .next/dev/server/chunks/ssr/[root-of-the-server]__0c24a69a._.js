@@ -257,9 +257,10 @@ function Footer() {
                                                     lineNumber: 59,
                                                     columnNumber: 17
                                                 }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "text-background/80",
-                                                    children: "(555) 123-4567"
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                    href: "tel:+27797035547",
+                                                    className: "text-background/80 hover:text-background",
+                                                    children: "+27 79 703 5547"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/Footer.jsx",
                                                     lineNumber: 60,
@@ -540,8 +541,35 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ScrollToTop$2e
 ;
 ;
 const metadata = {
-    title: "Joe's Plumbing | Expert Plumbing Services",
-    description: "Joe's Plumbing - Plumbing services available 24/7. Trusted for over 10 years. Emergency repairs, installations, and maintenance."
+    title: "Joe's Plumbing | Emergency & Residential Plumbing Services",
+    description: "Joe's Plumbing offers 24/7 emergency plumbing, leak repair, drain cleaning, bathroom installations, and water heater services. Trusted local plumber with over 10 years of experience.",
+    metadataBase: new URL("https://www.example.com"),
+    keywords: [
+        "plumber",
+        "emergency plumber",
+        "24/7 plumbing",
+        "leak detection",
+        "drain cleaning",
+        "water heater repair",
+        "bathroom plumbing",
+        "local plumber",
+        "plumbing services"
+    ],
+    authors: [
+        {
+            name: "Joe's Plumbing"
+        }
+    ],
+    openGraph: {
+        title: "Joe's Plumbing | 24/7 Emergency & Residential Plumbing Services",
+        description: "Fast, reliable plumbing services including emergency repairs, leak detection, drain cleaning, and water heater installation. Serving local homes and businesses for over a decade.",
+        url: "/",
+        siteName: "Joe's Plumbing",
+        type: "website"
+    },
+    alternates: {
+        canonical: "/"
+    }
 };
 function RootLayout({ children }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("html", {
@@ -551,29 +579,29 @@ function RootLayout({ children }) {
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ScrollToTop$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/app/layout.jsx",
-                    lineNumber: 19,
+                    lineNumber: 43,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Navbar$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/app/layout.jsx",
-                    lineNumber: 20,
+                    lineNumber: 44,
                     columnNumber: 9
                 }, this),
                 children,
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Footer$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/app/layout.jsx",
-                    lineNumber: 22,
+                    lineNumber: 46,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/app/layout.jsx",
-            lineNumber: 18,
+            lineNumber: 42,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/layout.jsx",
-        lineNumber: 17,
+        lineNumber: 41,
         columnNumber: 5
     }, this);
 }

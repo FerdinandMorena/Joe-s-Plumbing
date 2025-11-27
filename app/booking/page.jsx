@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import Button from "../../components/Button"
+import { useState } from "react";
+import Button from "../../components/Button";
 
 export default function Booking() {
   const [formData, setFormData] = useState({
@@ -11,32 +11,48 @@ export default function Booking() {
     date: "",
     time: "",
     serviceType: "",
-  })
+  });
 
   const handleSubmit = (e) => {
-    e.preventDefault()
-    console.log("Booking submitted:", formData)
-    alert("Thank you for your booking request! We will confirm your appointment shortly.")
-    setFormData({ name: "", email: "", phone: "", date: "", time: "", serviceType: "" })
-  }
+    e.preventDefault();
+    console.log("Booking submitted:", formData);
+    alert(
+      "Thank you for your booking request! We will confirm your appointment shortly."
+    );
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      date: "",
+      time: "",
+      serviceType: "",
+    });
+  };
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value })
-  }
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
 
   return (
     <main className="min-h-screen py-20">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">Book an Appointment</h1>
-          <p className="text-lg text-muted-foreground">Schedule your plumbing service at your convenience</p>
+          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+            Book an Appointment
+          </h1>
+          <p className="text-lg text-muted-foreground">
+            Schedule your plumbing service at your convenience
+          </p>
         </div>
 
         <div className="bg-card p-8 md:p-10 rounded-2xl shadow-md">
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="grid md:grid-cols-2 gap-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium text-foreground mb-2"
+                >
                   Full Name *
                 </label>
                 <input
@@ -50,7 +66,10 @@ export default function Booking() {
                 />
               </div>
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium text-foreground mb-2"
+                >
                   Email Address *
                 </label>
                 <input
@@ -66,7 +85,10 @@ export default function Booking() {
             </div>
 
             <div>
-              <label htmlFor="phone" className="block text-sm font-medium text-foreground mb-2">
+              <label
+                htmlFor="phone"
+                className="block text-sm font-medium text-foreground mb-2"
+              >
                 Phone Number *
               </label>
               <input
@@ -81,7 +103,10 @@ export default function Booking() {
             </div>
 
             <div>
-              <label htmlFor="serviceType" className="block text-sm font-medium text-foreground mb-2">
+              <label
+                htmlFor="serviceType"
+                className="block text-sm font-medium text-foreground mb-2"
+              >
                 Service Type *
               </label>
               <select
@@ -105,7 +130,10 @@ export default function Booking() {
 
             <div className="grid md:grid-cols-2 gap-6">
               <div>
-                <label htmlFor="date" className="block text-sm font-medium text-foreground mb-2">
+                <label
+                  htmlFor="date"
+                  className="block text-sm font-medium text-foreground mb-2"
+                >
                   Preferred Date *
                 </label>
                 <input
@@ -119,7 +147,10 @@ export default function Booking() {
                 />
               </div>
               <div>
-                <label htmlFor="time" className="block text-sm font-medium text-foreground mb-2">
+                <label
+                  htmlFor="time"
+                  className="block text-sm font-medium text-foreground mb-2"
+                >
                   Preferred Time *
                 </label>
                 <select
@@ -142,10 +173,17 @@ export default function Booking() {
 
             <div className="bg-accent/10 p-6 rounded-lg">
               <p className="text-sm text-muted-foreground leading-relaxed">
-                <strong className="text-foreground">Note:</strong> This is a booking request. We will contact you to
-                confirm your appointment within 2 hours during business hours. For emergency services, please call us
-                directly at
-                <span className="text-primary font-semibold"> (555) 123-4567</span>.
+                <strong className="text-foreground">Note:</strong> This is a
+                booking request. We will contact you to confirm your appointment
+                within 2 hours during business hours. For emergency services,
+                please call us directly at
+                <a
+                  href="tel:+27797035547"
+                  className="text-primary font-semibold"
+                >
+                  +27 79 703 5547
+                </a>
+                .
               </p>
             </div>
 
@@ -156,5 +194,5 @@ export default function Booking() {
         </div>
       </div>
     </main>
-  )
+  );
 }
