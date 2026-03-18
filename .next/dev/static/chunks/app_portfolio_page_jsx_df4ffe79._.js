@@ -388,21 +388,53 @@ function PortfolioPage() {
                                         ]
                                     }, void 0, true) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                                         children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("video", {
-                                                className: "w-full h-80 md:h-96 object-cover bg-black",
-                                                controls: true,
-                                                preload: "metadata",
-                                                poster: item.poster,
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "relative",
                                                 children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("source", {
-                                                        src: item.src,
-                                                        type: "video/mp4"
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("video", {
+                                                        className: "w-full h-80 md:h-96 object-cover bg-black",
+                                                        preload: "metadata",
+                                                        poster: item.poster,
+                                                        muted: true,
+                                                        playsInline: true,
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("source", {
+                                                                src: item.src,
+                                                                type: "video/mp4"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/portfolio/page.jsx",
+                                                                lineNumber: 317,
+                                                                columnNumber: 23
+                                                            }, this),
+                                                            "Your browser does not support the video tag."
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/app/portfolio/page.jsx",
+                                                        lineNumber: 310,
+                                                        columnNumber: 23
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "pointer-events-none absolute inset-0 grid place-items-center",
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "h-14 w-14 rounded-full bg-black/45 border border-white/20 backdrop-blur flex items-center justify-center",
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                className: "text-white text-2xl leading-none",
+                                                                children: "▶"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/portfolio/page.jsx",
+                                                                lineNumber: 324,
+                                                                columnNumber: 23
+                                                            }, this)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/portfolio/page.jsx",
+                                                            lineNumber: 323,
+                                                            columnNumber: 23
+                                                        }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/portfolio/page.jsx",
-                                                        lineNumber: 315,
-                                                        columnNumber: 25
-                                                    }, this),
-                                                    "Your browser does not support the video tag."
+                                                        lineNumber: 322,
+                                                        columnNumber: 23
+                                                    }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/portfolio/page.jsx",
@@ -421,7 +453,7 @@ function PortfolioPage() {
                                                                     children: item.title
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/portfolio/page.jsx",
-                                                                    lineNumber: 323,
+                                                                    lineNumber: 333,
                                                                     columnNumber: 29
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -429,13 +461,13 @@ function PortfolioPage() {
                                                                     children: "Video"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/portfolio/page.jsx",
-                                                                    lineNumber: 326,
+                                                                    lineNumber: 336,
                                                                     columnNumber: 29
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/portfolio/page.jsx",
-                                                            lineNumber: 322,
+                                                            lineNumber: 332,
                                                             columnNumber: 27
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -443,18 +475,18 @@ function PortfolioPage() {
                                                             children: "Video"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/portfolio/page.jsx",
-                                                            lineNumber: 330,
+                                                            lineNumber: 340,
                                                             columnNumber: 27
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/portfolio/page.jsx",
-                                                    lineNumber: 321,
+                                                    lineNumber: 331,
                                                     columnNumber: 25
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/portfolio/page.jsx",
-                                                lineNumber: 320,
+                                                lineNumber: 330,
                                                 columnNumber: 23
                                             }, this)
                                         ]
@@ -492,7 +524,7 @@ function PortfolioPage() {
                             "aria-label": "Close preview"
                         }, void 0, false, {
                             fileName: "[project]/app/portfolio/page.jsx",
-                            lineNumber: 351,
+                            lineNumber: 361,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -508,7 +540,7 @@ function PortfolioPage() {
                                             children: "‹"
                                         }, void 0, false, {
                                             fileName: "[project]/app/portfolio/page.jsx",
-                                            lineNumber: 362,
+                                            lineNumber: 372,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -519,7 +551,7 @@ function PortfolioPage() {
                                             children: "›"
                                         }, void 0, false, {
                                             fileName: "[project]/app/portfolio/page.jsx",
-                                            lineNumber: 370,
+                                            lineNumber: 380,
                                             columnNumber: 19
                                         }, this)
                                     ]
@@ -537,7 +569,7 @@ function PortfolioPage() {
                                                             children: activeItem.title
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/portfolio/page.jsx",
-                                                            lineNumber: 384,
+                                                            lineNumber: 394,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -552,13 +584,13 @@ function PortfolioPage() {
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/portfolio/page.jsx",
-                                                            lineNumber: 387,
+                                                            lineNumber: 397,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/portfolio/page.jsx",
-                                                    lineNumber: 383,
+                                                    lineNumber: 393,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -568,13 +600,13 @@ function PortfolioPage() {
                                                     children: "Close"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/portfolio/page.jsx",
-                                                    lineNumber: 392,
+                                                    lineNumber: 402,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/portfolio/page.jsx",
-                                            lineNumber: 382,
+                                            lineNumber: 392,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -599,7 +631,7 @@ function PortfolioPage() {
                                                 className: "w-full max-h-[75vh] object-contain"
                                             }, activeItem.id, false, {
                                                 fileName: "[project]/app/portfolio/page.jsx",
-                                                lineNumber: 419,
+                                                lineNumber: 429,
                                                 columnNumber: 21
                                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("video", {
                                                 className: "w-full max-h-[75vh] object-contain",
@@ -613,25 +645,25 @@ function PortfolioPage() {
                                                         type: "video/mp4"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/portfolio/page.jsx",
-                                                        lineNumber: 434,
+                                                        lineNumber: 444,
                                                         columnNumber: 23
                                                     }, this),
                                                     "Your browser does not support the video tag."
                                                 ]
                                             }, activeItem.id, true, {
                                                 fileName: "[project]/app/portfolio/page.jsx",
-                                                lineNumber: 426,
+                                                lineNumber: 436,
                                                 columnNumber: 21
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/portfolio/page.jsx",
-                                            lineNumber: 401,
+                                            lineNumber: 411,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/portfolio/page.jsx",
-                                    lineNumber: 381,
+                                    lineNumber: 391,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -639,19 +671,19 @@ function PortfolioPage() {
                                     children: "Tip: use \x1b\x1b keys to navigate, swipe on mobile, ESC to close"
                                 }, void 0, false, {
                                     fileName: "[project]/app/portfolio/page.jsx",
-                                    lineNumber: 441,
+                                    lineNumber: 451,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/portfolio/page.jsx",
-                            lineNumber: 358,
+                            lineNumber: 368,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/portfolio/page.jsx",
-                    lineNumber: 345,
+                    lineNumber: 355,
                     columnNumber: 11
                 }, this),
                 filtered.length === 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -659,7 +691,7 @@ function PortfolioPage() {
                     children: "No items to show."
                 }, void 0, false, {
                     fileName: "[project]/app/portfolio/page.jsx",
-                    lineNumber: 449,
+                    lineNumber: 459,
                     columnNumber: 11
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -669,12 +701,12 @@ function PortfolioPage() {
                         children: "Want your job featured here? Book an appointment and we’ll take care of the rest."
                     }, void 0, false, {
                         fileName: "[project]/app/portfolio/page.jsx",
-                        lineNumber: 455,
+                        lineNumber: 465,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/portfolio/page.jsx",
-                    lineNumber: 454,
+                    lineNumber: 464,
                     columnNumber: 9
                 }, this)
             ]

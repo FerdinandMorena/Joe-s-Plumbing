@@ -306,16 +306,26 @@ export default function PortfolioPage() {
                     </>
                   ) : (
                     <>
+                      <div className="relative">
                       <video
-                        className="w-full h-80 md:h-96 object-cover bg-black"
-                        controls
-                        preload="metadata"
-                        poster={item.poster}
+                      className="w-full h-80 md:h-96 object-cover bg-black"
+                      preload="metadata"
+                      poster={item.poster}
+                      muted
+                      playsInline
                       >
-                        <source src={item.src} type="video/mp4" />
-                        Your browser does not support the video tag.
+                      <source src={item.src} type="video/mp4" />
+                      Your browser does not support the video tag.
                       </video>
-
+                      
+                      {/* Play overlay (click opens modal) */}
+                      <div className="pointer-events-none absolute inset-0 grid place-items-center">
+                      <div className="h-14 w-14 rounded-full bg-black/45 border border-white/20 backdrop-blur flex items-center justify-center">
+                      <span className="text-white text-2xl leading-none">▶</span>
+                      </div>
+                      </div>
+                      </div>
+                      
                       {/* Put video title BELOW the video so controls are never covered */}
                       <div className="p-4">
                         <div className="flex items-center justify-between gap-3">
