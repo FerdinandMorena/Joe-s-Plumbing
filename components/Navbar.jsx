@@ -2,19 +2,28 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Menu, X, Sun, Moon } from "lucide-react";
 import { useTheme } from "next-themes";
 import Button from "./Button";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
   const { theme, setTheme } = useTheme();
 
   const navLinks = [
     { name: "Home", href: "/" },
-    { name: "Services", href: "/services" },
     { name: "About", href: "/about" },
+    { name: "Services", href: "/services" },
+    { name: "Our Work", href: "/portfolio" },
   ];
+
+  const isActive = (href) => {
+    if (!pathname) return false;
+    if (href === "/") return pathname === "/";
+    return pathname === href || pathname.startsWith(`${href}/`);
+  };
 
   const toggleTheme = () => {
     setTheme(theme === "dark" ? "light" : "dark");
@@ -51,15 +60,27 @@ export default function Navbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-4">
-            {navLinks.map((link) => (
-              <Link
-                key={link.name}
-                href={link.href}
-                className="text-foreground hover:text-primary transition-colors font-medium"
-              >
-                {link.name}
-              </Link>
-            ))}
+            {navLinks.map((link) => {
+              const active = isActive(link.href);
+              return (
+                <Link
+                  key={link.name}
+                  href={link.href}
+                  className={`group relative px-1 py-2 text-sm font-semibold transition-colors ${
+                    active
+                      ? "text-primary"
+                      : "text-foreground hover:text-primary"
+                  }`}
+                >
+                  {link.name}
+                  <span
+                    className={`pointer-events-none absolute left-0 right-0 -bottom-0.5 mx-auto h-0.5 w-full rounded-full bg-primary transition-all duration-300 ${
+                      active ? "opacity-100" : "opacity-0 group-hover:opacity-60"
+                    }`}
+                  />
+                </Link>
+              );
+            })}
             <button
               type="button"
               onClick={toggleTheme}
@@ -72,8 +93,8 @@ export default function Navbar() {
                 <Moon className="w-5 h-5" />
               )}
             </button>
-            <Link href="/booking">
-              <Button>Book Now</Button>
+            <Link className="cursor-pointer" href="/booking">
+              <Button className="cursor-pointer">Book Now</Button>
             </Link>
           </div>
 
@@ -90,16 +111,26 @@ export default function Navbar() {
         {isOpen && (
           <div className="md:hidden absolute left-0 right-0 top-20 bg-card border-t border-border shadow-lg animate-fade-in-down z-50">
             <div className="px-4 py-4 space-y-3">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.name}
-                  href={link.href}
-                  className="block py-2 text-foreground hover:text-primary transition-colors font-medium"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {link.name}
-                </Link>
-              ))}
+              {navLinks.map((link) => {
+                const active = isActive(link.href);
+                return (
+                  <Link
+                    key={link.name}
+                    href={link.href}
+                    className={`flex items-center justify-between rounded-lg px-3 py-2 font-semibold transition-colors ${
+                      active
+                        ? "bg-primary/10 text-primary"
+                        : "text-foreground hover:bg-muted hover:text-primary"
+                    }`}
+                    onClick={() => setIsOpen(false)}
+                  >
+                    <span>{link.name}</span>
+                    {active && (
+                      <span className="h-1.5 w-1.5 rounded-full bg-primary" />
+                    )}
+                  </Link>
+                );
+              })}
               <button
                 type="button"
                 onClick={toggleTheme}
