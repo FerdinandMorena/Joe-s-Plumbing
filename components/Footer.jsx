@@ -99,9 +99,11 @@ export default function Footer() {
               <li className="flex items-start gap-2">
                 <MapPin className="w-5 h-5 text-primary-foreground dark:text-white flex-shrink-0 mt-1" />
                 <span className="text-primary-foreground/80 dark:text-white/80">
-                  123 Main Street
+                  Stand no:890
                   <br />
-                  Anytown, ST 12345
+                  lethuli park, 9L
+                  <br />
+                  Seshego
                 </span>
               </li>
             </ul>

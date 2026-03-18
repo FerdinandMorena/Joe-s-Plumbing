@@ -130,7 +130,7 @@ export default function About() {
               className="w-32 h-32 rounded-full mx-auto mb-6 object-cover"
             />
             <h3 className="text-2xl font-bold text-foreground mb-2">
-              Joe Martinez
+              Lesetja Johannes Sathekge
             </h3>
             <p className="text-primary font-semibold mb-4">Master Plumber</p>
             <p className="text-muted-foreground leading-relaxed">
