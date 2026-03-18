@@ -1,5 +1,12 @@
-import Link from "next/link"
-import { Phone, Mail, MapPin, Facebook, Twitter, Instagram } from "lucide-react"
+import Link from "next/link";
+import {
+  Phone,
+  Mail,
+  MapPin,
+  Facebook,
+  Twitter,
+  Instagram,
+} from "lucide-react";
 
 export default function Footer() {
   return (
@@ -10,7 +17,12 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <div className="w-10 h-10 bg-primary-foreground/10 dark:bg-white/10 rounded-lg flex items-center justify-center">
-                <svg className="w-6 h-6 text-primary-foreground dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg
+                  className="w-6 h-6 text-primary-foreground dark:text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -21,7 +33,9 @@ export default function Footer() {
               </div>
               <span className="text-xl font-bold">Joe's Plumbing</span>
             </div>
-            <p className="text-primary-foreground/80 dark:text-white/80 mb-4">Ready to help with all your plumbing needs.</p>
+            <p className="text-primary-foreground/80 dark:text-white/80 mb-4">
+              Ready to help with all your plumbing needs.
+            </p>
           </div>
 
           {/* Quick Links */}
@@ -78,7 +92,9 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="w-5 h-5 text-primary-foreground dark:text-white" />
-                <span className="text-primary-foreground/80 dark:text-white/80">info@joesplumbing.com</span>
+                <span className="text-primary-foreground/80 dark:text-white/80">
+                  lesetjasathekge88@gmail.com
+                </span>
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="w-5 h-5 text-primary-foreground dark:text-white flex-shrink-0 mt-1" />
@@ -98,15 +114,19 @@ export default function Footer() {
               <li>Monday - Friday: 7am - 8pm</li>
               <li>Saturday: 8am - 6pm</li>
               <li>Sunday: 9am - 5pm</li>
-              <li className="text-primary-foreground dark:text-white font-semibold pt-2">24/7 Emergency Service</li>
+              <li className="text-primary-foreground dark:text-white font-semibold pt-2">
+                24/7 Emergency Service
+              </li>
             </ul>
           </div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-primary-foreground/20 dark:border-white/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-primary-foreground/80 dark:text-white/80 text-sm">Joe's Plumbing - Serving since 2014</p>
-          <div className="flex gap-4">
+        <div className="border-t border-primary-foreground/20 dark:border-white/20 mt-8 pt-8 flex flex-col md:flex-row justify-center items-center gap-4">
+          {/* <p className="text-primary-foreground/80 dark:text-white/80 text-sm">
+            Joe's Plumbing - Serving since 2014
+          </p> */}
+          {/* <div className="flex gap-4">
             <a
               href="#"
               className="w-10 h-10 rounded-full bg-primary-foreground/10 dark:bg-white/10 flex items-center justify-center hover:bg-primary-foreground/20 dark:hover:bg-white/20 hover:scale-110 transition-all duration-200"
@@ -125,9 +145,13 @@ export default function Footer() {
             >
               <Instagram className="w-5 h-5" />
             </a>
-          </div>
+          </div> */}
+          <p className="text-primary-foreground/80 dark:text-white/80 text-sm">
+            &copy; {new Date().getFullYear()} Joe's Plumbing. All rights
+            reserved.
+          </p>
         </div>
       </div>
     </footer>
-  )
+  );
 }

@@ -1,8 +1,8 @@
-"use client"
-import Link from "next/link"
-import Button from "./Button"
-import { Phone } from "lucide-react"
-import { motion } from "framer-motion"
+"use client";
+import Link from "next/link";
+import Button from "./Button";
+import { Phone } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
@@ -20,7 +20,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              Your Plumber - Joe's Got You Covered
+              Need a Plumber? - Joe's Got You Covered
             </motion.h1>
             <motion.p
               className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed"
@@ -28,7 +28,8 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
             >
-              Fast, reliable plumbing from someone you can trust. I'm here when you need me - day or night.
+              Fast, reliable plumbing from someone you can trust. I'm here when
+              you need me - day or night.
             </motion.p>
             <motion.div
               className="flex flex-col sm:flex-row gap-4"
@@ -37,12 +38,18 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.4 }}
             >
               <Link href="/booking">
-                <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                <motion.div
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
                   <Button className="w-full sm:w-auto">Book Appointment</Button>
                 </motion.div>
               </Link>
-              <a href="tel:5551234567">
-                <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              <a href="tel:+27797035547">
+                <motion.div
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
                   <Button
                     variant="outline"
                     className="w-full sm:w-auto flex items-center justify-center gap-2 bg-transparent"
@@ -70,7 +77,9 @@ export default function Hero() {
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.4, delay: 0.7 + index * 0.1 }}
                 >
-                  <p className="text-3xl font-bold text-primary">{stat.value}</p>
+                  <p className="text-3xl font-bold text-primary">
+                    {stat.value}
+                  </p>
                   <p className="text-sm text-muted-foreground">{stat.label}</p>
                 </motion.div>
               ))}
@@ -84,7 +93,7 @@ export default function Hero() {
             whileHover={{ scale: 1.02 }}
           >
             <img
-              src="/professional-plumber-working-on-pipes-in-modern-ho.jpg"
+              src="/hero.png"
               alt="Professional plumber at work"
               className="w-full h-full object-cover rounded-2xl shadow-2xl"
             />
@@ -92,5 +101,5 @@ export default function Hero() {
         </div>
       </div>
     </section>
-  )
+  );
 }
