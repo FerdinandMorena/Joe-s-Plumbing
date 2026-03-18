@@ -32,34 +32,30 @@ export default function Navbar() {
   return (
     <nav className="bg-card shadow-md sticky top-0 z-50 animate-fade-in-down">
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex justify-between items-center h-24">
           {/* Logo */}
           <Link
             href="/"
-            className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+            className="group flex items-center gap-4 transition-opacity hover:opacity-95"
+            aria-label="Go to homepage"
           >
-            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-              <svg
-                className="w-6 h-6 text-primary-foreground"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
-                />
-              </svg>
+            <img
+              src="/logo.png"
+              alt="Joe's Plumbing logo"
+              className="h-20 md:h-[88px] w-auto object-contain transition-transform duration-300 group-hover:scale-[1.03]"
+            />
+            <div className="leading-tight">
+              <span className="block text-xl md:text-2xl font-extrabold text-foreground tracking-tight">
+                Joe’s Plumbing
+              </span>
+              <span className="block text-xs md:text-sm font-semibold text-muted-foreground">
+                Fast • Reliable • Local
+              </span>
             </div>
-            <span className="text-xl font-bold text-foreground">
-              Joe's Plumbing
-            </span>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-4">
+          <div className="hidden md:flex items-center gap-6">
             {navLinks.map((link) => {
               const active = isActive(link.href);
               return (
@@ -75,7 +71,9 @@ export default function Navbar() {
                   {link.name}
                   <span
                     className={`pointer-events-none absolute left-0 right-0 -bottom-0.5 mx-auto h-0.5 w-full rounded-full bg-primary transition-all duration-300 ${
-                      active ? "opacity-100" : "opacity-0 group-hover:opacity-60"
+                      active
+                        ? "opacity-100"
+                        : "opacity-0 group-hover:opacity-60"
                     }`}
                   />
                 </Link>

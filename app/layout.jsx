@@ -1,17 +1,21 @@
-import { Inter } from "next/font/google"
-import "./globals.css"
-import Navbar from "../components/Navbar"
-import Footer from "../components/Footer"
-import ScrollToTop from "../components/ScrollToTop"
-import { ThemeProvider } from "../components/theme-provider"
+import { Inter } from "next/font/google";
+import "./globals.css";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import ScrollToTop from "../components/ScrollToTop";
+import { ThemeProvider } from "../components/theme-provider";
 
-const inter = Inter({ subsets: ["latin"] })
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Joe's Plumbing | Emergency & Residential Plumbing Services",
   description:
     "Joe's Plumbing offers 24/7 emergency plumbing, leak repair, drain cleaning, bathroom installations, and water heater services. Trusted local plumber with over 10 years of experience.",
   metadataBase: new URL("https://www.example.com"),
+  icons: {
+    icon: [{ url: "/logo.png", type: "image/png" }],
+    apple: [{ url: "/logo.png", type: "image/png" }],
+  },
   keywords: [
     "plumber",
     "emergency plumber",
@@ -35,7 +39,7 @@ export const metadata = {
   alternates: {
     canonical: "/",
   },
-}
+};
 
 export default function RootLayout({ children }) {
   return (
@@ -49,5 +53,5 @@ export default function RootLayout({ children }) {
         </ThemeProvider>
       </body>
     </html>
-  )
+  );
 }

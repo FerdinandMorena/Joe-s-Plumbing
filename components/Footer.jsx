@@ -10,28 +10,46 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="bg-primary text-primary-foreground dark:bg-black dark:text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <footer className="relative overflow-hidden bg-primary text-primary-foreground dark:bg-black dark:text-white">
+      {/* Subtle background pattern */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 opacity-25 dark:opacity-20"
+        style={{
+          backgroundImage:
+            "linear-gradient(to right, rgba(255,255,255,0.12) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.12) 1px, transparent 1px)",
+          backgroundSize: "48px 48px",
+        }}
+      />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -top-24 -right-24 h-72 w-72 rounded-full bg-white/10 blur-3xl"
+      />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -bottom-24 -left-24 h-72 w-72 rounded-full bg-white/10 blur-3xl"
+      />
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-primary-foreground/10 dark:bg-white/10 rounded-lg flex items-center justify-center">
-                <svg
-                  className="w-6 h-6 text-primary-foreground dark:text-white"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
-                  />
-                </svg>
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-22 h-22 rounded-2xl bg-primary-foreground/10 dark:bg-white/10 ring-1 ring-primary-foreground/15 dark:ring-white/15 flex items-center justify-center overflow-hidden">
+                <img
+                  src="/logo.png"
+                  alt="Joe's Plumbing logo"
+                  className="w-20 h-20 object-contain"
+                />
               </div>
-              <span className="text-xl font-bold">Joe's Plumbing</span>
+              <div className="leading-tight">
+                <span className="block text-xl font-extrabold">
+                  Joe's Plumbing
+                </span>
+                <span className="block text-xs text-primary-foreground/80 dark:text-white/80 font-semibold">
+                  Fast • Reliable • Local
+                </span>
+              </div>
             </div>
             <p className="text-primary-foreground/80 dark:text-white/80 mb-4">
               Ready to help with all your plumbing needs.
@@ -124,7 +142,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-primary-foreground/20 dark:border-white/20 mt-8 pt-8 flex flex-col md:flex-row justify-center items-center gap-4">
+        <div className="border-t border-primary-foreground/20 dark:border-white/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           {/* <p className="text-primary-foreground/80 dark:text-white/80 text-sm">
             Joe's Plumbing - Serving since 2014
           </p> */}
@@ -151,6 +169,9 @@ export default function Footer() {
           <p className="text-primary-foreground/80 dark:text-white/80 text-sm">
             &copy; {new Date().getFullYear()} Joe's Plumbing. All rights
             reserved.
+          </p>
+          <p className="text-primary-foreground/70 dark:text-white/70 text-xs">
+            Website by <span className="font-semibold">Ferdinand Morena</span>
           </p>
         </div>
       </div>
