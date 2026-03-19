@@ -1,26 +1,27 @@
-"use client"
-import { Shield, Clock, Award, ThumbsUp } from "lucide-react"
-import { motion } from "framer-motion"
+"use client";
+import { Shield, Clock, Award, ThumbsUp } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function WhyChooseUs() {
   const reasons = [
-    
     {
       icon: Clock,
       title: "24/7 Availability",
-      description: "Call anytime - I'm always ready to help with plumbing emergencies.",
+      description:
+        "Call anytime - I'm always ready to help with plumbing emergencies.",
     },
     {
       icon: Award,
-      title: "10+ Years Experience",
+      title: "6+ Years Experience",
       description: "Over a decade of honest, quality work you can count on.",
     },
     {
       icon: ThumbsUp,
       title: "Fair & Honest Pricing",
-      description: "Upfront quotes with no hidden fees. You'll know the cost before I start.",
+      description:
+        "Upfront quotes with no hidden fees. You'll know the cost before I start.",
     },
-  ]
+  ];
 
   return (
     <section className="py-20 bg-muted/30">
@@ -32,7 +33,9 @@ export default function WhyChooseUs() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Why Choose Joe</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+            Why Choose Joe
+          </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             A plumber who cares about doing the job right
           </p>
@@ -61,12 +64,16 @@ export default function WhyChooseUs() {
               >
                 <reason.icon className="w-8 h-8 text-primary-foreground" />
               </motion.div>
-              <h3 className="text-xl font-semibold text-foreground mb-2">{reason.title}</h3>
-              <p className="text-muted-foreground leading-relaxed">{reason.description}</p>
+              <h3 className="text-xl font-semibold text-foreground mb-2">
+                {reason.title}
+              </h3>
+              <p className="text-muted-foreground leading-relaxed">
+                {reason.description}
+              </p>
             </motion.div>
           ))}
         </div>
       </div>
     </section>
-  )
+  );
 }
