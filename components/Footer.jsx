@@ -10,7 +10,7 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="relative overflow-hidden bg-primary text-primary-foreground dark:bg-black dark:text-white">
+    <footer className="relative overflow-hidden bg-primary text-primary-foreground dark:bg-background dark:text-foreground">
       {/* Subtle background pattern */}
       <div
         aria-hidden="true"
