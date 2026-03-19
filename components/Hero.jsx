@@ -67,7 +67,7 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.6 }}
             >
               {[
-                { value: "10+", label: "Years Experience" },
+                { value: "6+", label: "Years Experience" },
                 { value: "24/7", label: "Always Available" },
                 { value: "500+", label: "Happy Customers" },
               ].map((stat, index) => (

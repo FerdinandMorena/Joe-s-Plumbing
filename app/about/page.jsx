@@ -22,7 +22,7 @@ export default function About() {
             </h2>
             <p className="text-muted-foreground mb-4 leading-relaxed">
               I've been fixing leaky faucets, unclogging drains, and installing
-              water heaters since 2014. What started with just me, a van, and a
+              water heaters since 2019. What started with just me, a van, and a
               toolbox has grown thanks to word-of-mouth from satisfied customers
               like you.
             </p>
@@ -50,7 +50,7 @@ export default function About() {
         <div className="grid md:grid-cols-3 gap-8 mb-20">
           <div className="bg-card p-8 rounded-xl shadow-md text-center">
             <Award className="w-12 h-12 text-primary mx-auto mb-4" />
-            <h3 className="text-3xl font-bold text-foreground mb-2">10+</h3>
+            <h3 className="text-3xl font-bold text-foreground mb-2">6+</h3>
             <p className="text-muted-foreground">Years of Experience</p>
           </div>
           <div className="bg-card p-8 rounded-xl shadow-md text-center">
@@ -62,59 +62,6 @@ export default function About() {
             <Clock className="w-12 h-12 text-primary mx-auto mb-4" />
             <h3 className="text-3xl font-bold text-foreground mb-2">24/7</h3>
             <p className="text-muted-foreground">Emergency Service</p>
-          </div>
-        </div>
-
-        {/* Certifications */}
-        <div className="bg-card p-10 rounded-2xl shadow-md mb-20">
-          <h2 className="text-3xl font-bold text-foreground mb-8 text-center">
-            Qualified & Trained
-          </h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="flex items-start gap-4">
-              <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-              <div>
-                <h3 className="font-semibold text-foreground mb-1">Insured</h3>
-                <p className="text-muted-foreground">
-                  Comprehensive insurance coverage for your peace of mind
-                </p>
-              </div>
-            </div>
-            <div className="flex items-start gap-4">
-              <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-              <div>
-                <h3 className="font-semibold text-foreground mb-1">
-                  EPA Certified
-                </h3>
-                <p className="text-muted-foreground">
-                  Certified in environmental protection and safe disposal
-                  practices
-                </p>
-              </div>
-            </div>
-            <div className="flex items-start gap-4">
-              <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-              <div>
-                <h3 className="font-semibold text-foreground mb-1">
-                  Background Checked
-                </h3>
-                <p className="text-muted-foreground">
-                  You can trust me in your home - background verified
-                </p>
-              </div>
-            </div>
-            <div className="flex items-start gap-4">
-              <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-              <div>
-                <h3 className="font-semibold text-foreground mb-1">
-                  Always Learning
-                </h3>
-                <p className="text-muted-foreground">
-                  Regular training on the latest plumbing technologies and best
-                  practices
-                </p>
-              </div>
-            </div>
           </div>
         </div>
 
@@ -134,8 +81,8 @@ export default function About() {
             </h3>
             <p className="text-primary font-semibold mb-4">Master Plumber</p>
             <p className="text-muted-foreground leading-relaxed">
-              I started this business over 10 years ago because I wanted to be
-              my own boss and serve my community the right way. Every customer
+              I started this business over 6 years ago because I wanted to be my
+              own boss and serve my community the right way. Every customer
               matters to me, and I take pride in doing quality work at fair
               prices. Give me a call anytime - I'm here to help!
             </p>
