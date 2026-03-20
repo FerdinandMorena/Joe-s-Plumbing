@@ -142,6 +142,7 @@ export default function Booking() {
                   value={formData.name}
                   onChange={handleChange}
                   required
+                  placeholder="Enter your full name"
                   className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
                 />
               </div>
@@ -159,6 +160,7 @@ export default function Booking() {
                   value={formData.email}
                   onChange={handleChange}
                   required
+                  placeholder="Enter your email address"
                   className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
                 />
               </div>
@@ -181,7 +183,7 @@ export default function Booking() {
                 onChange={handleChange}
                 required
                 maxLength={15}
-                placeholder="Numbers only"
+                placeholder="Enter your phone number"
                 className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
               />
             </div>
