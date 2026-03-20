@@ -3,20 +3,17 @@ import TestimonialCard from "./TestimonialCard"
 export default function Testimonials() {
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      location: "Anytown, ST",
+      name: "Thabo Molefe",
       rating: 5,
       text: "Excellent service! They responded quickly to our emergency leak and fixed it professionally. Highly recommend!",
     },
     {
-      name: "Michael Chen",
-      location: "Anytown, ST",
+      name: "Lerato Mahlangu",
       rating: 5,
       text: "Very professional and knowledgeable. They installed our new water heater and explained everything clearly.",
     },
     {
-      name: "Emily Rodriguez",
-      location: "Anytown, ST",
+      name: "Kgomotso Ndlovu",
       rating: 5,
       text: "Best plumber we've ever worked with. Fair pricing, quality work, and friendly service. Will definitely call again!",
     },

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X, Sun, Moon } from "lucide-react";
@@ -9,8 +9,13 @@ import Button from "./Button";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const pathname = usePathname();
   const { theme, setTheme } = useTheme();
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const navLinks = [
     { name: "Home", href: "/" },
@@ -85,7 +90,7 @@ export default function Navbar() {
               className="p-2 rounded-lg border border-border bg-background text-foreground hover:bg-muted transition-colors flex items-center justify-center"
               aria-label="Toggle theme"
             >
-              {theme === "dark" ? (
+              {mounted && theme === "dark" ? (
                 <Sun className="w-5 h-5" />
               ) : (
                 <Moon className="w-5 h-5" />
@@ -135,13 +140,13 @@ export default function Navbar() {
                 className="w-full flex items-center justify-center gap-2 py-2 rounded-lg border border-border bg-background text-foreground hover:bg-muted transition-colors"
                 aria-label="Toggle theme"
               >
-                {theme === "dark" ? (
+                {mounted && theme === "dark" ? (
                   <Sun className="w-5 h-5" />
                 ) : (
                   <Moon className="w-5 h-5" />
                 )}
                 <span className="text-sm font-medium">
-                  Toggle {theme === "dark" ? "Light" : "Dark"} Mode
+                  Toggle {mounted && theme === "dark" ? "Light" : "Dark"} Mode
                 </span>
               </button>
               <Link href="/booking" onClick={() => setIsOpen(false)}>
